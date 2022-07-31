@@ -1,0 +1,41 @@
+{% extends "Website/base2.html" %}
+{% load static %}
+
+
+{% block content %}
+
+<!--////////////////////////////////////////////////////////////////////////////  -->
+<!--Start google fonts and CSS link section  -->
+<!--///////////////////////////////////////////////////////////////////////////  -->
+
+<link rel="stylesheet" href="{% static 'CSS/success.css' %}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script src="https://kit.fontawesome.com/be0a041bc5.js" crossorigin="anonymous"></script>
+
+<!--////////////////////////////////////////////////////////////////////////////  -->
+<!--End google fonts and CSS link section  -->
+<!--///////////////////////////////////////////////////////////////////////////  -->
+
+<!--////////////////////////////////////////////////////////////////////////////  -->
+<!--Start thank you section  -->
+<!--///////////////////////////////////////////////////////////////////////////  -->
+
+<div class="thankyou_section">
+  <h1 id="headding_font">Thank you.</h1>
+  <h2 id="sub_headding1">Your message was sent and I will reply to you ASAP</h2>
+  <a href="{% url 'Website:HomePage' %}"><button id="paragraph__font1" type="button" class="btn btn-primary"> <span id="button_contents"> Return to Homepage </span></button></a>
+</div>
+
+<!--////////////////////////////////////////////////////////////////////////////  -->
+<!--End thank you section  -->
+<!--///////////////////////////////////////////////////////////////////////////  -->
+
+
+{% endblock %}

@@ -1,0 +1,170 @@
+
+/* ////////////////////////////////////////////////////////////////////////// */
+/* Start navbar section */
+/* ////////////////////////////////////////////////////////////////////////// */
+
+#nav1{
+  border-style: solid;
+  border-bottom-width: 1px;
+  border-top-width: 0px;
+  border-color: #ffffff;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  font-family: 'Architects Daughter', cursive;
+}
+
+#name_headding{
+  font-family: 'Gruppo', cursive;
+  font-weight: bolder;
+  color: #ffffff;
+}
+
+#nav_brand{
+  font-family: 'Gruppo', cursive;
+  font-weight: bolder;
+  color: #ffffff;
+}
+
+#button1{
+  border-color: #ffffff;
+}
+
+.nav_brand1{
+  color: #ffffff;
+}
+
+.nav_brand2{
+  display: none;
+}
+
+span{
+  color:grey;
+}
+
+#navbarNavDropdown{
+  padding-left: 30%;
+}
+
+.navbar-toggler{
+  border-color: #ffffff;
+  border-style: solid;
+  border-width: 1px;
+}
+
+a{
+  color:#ffffff;
+}
+
+.part1{
+text-align: center;
+}
+
+li{
+  font-size: 25px;
+}
+
+/* ////////////////////////////////////////////////////////////////////////// */
+/* End navbar section */
+/* ////////////////////////////////////////////////////////////////////////// */
+
+/* ////////////////////////////////////////////////////////////////////////// */
+/* Start animations and JS classes */
+/* ////////////////////////////////////////////////////////////////////////// */
+
+.animated-text {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.animated-text.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.left.side-entry {
+  animation: anim1 .7s ease-out;
+}
+.right.side-entry {
+  animation: anim2 .7s ease-out;
+}
+
+@keyframes anim1 {
+  0% {
+    opacity: 0;
+    transform: translateX(-30rem);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+@keyframes anim2 {
+  0% {
+    opacity: 0;
+    transform: translateX(30rem);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+.opacity {
+  opacity: 1;
+}
+
+.opacity:hover {
+  opacity: 0.7;
+}
+
+@keyframes animation_slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(200%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.slideUp {
+  animation: animation_slideUp .7s ease-out;
+}
+
+.link_one{
+  visibility: hidden;
+}
+
+/* ////////////////////////////////////////////////////////////////////////// */
+/* End animations and JS classes */
+/* ////////////////////////////////////////////////////////////////////////// */
+
+/* ////////////////////////////////////////////////////////////////////////// */
+/* Start media breakpoint section */
+/* ////////////////////////////////////////////////////////////////////////// */
+
+@media (max-width: 430px) {
+  #nav1{
+    background-color: #1f1f24;
+  }
+}
+
+@media (max-width: 256px) {
+  li {
+    font-size: 20px;
+  }
+  .nav_brand2{
+    display: inherit;
+    color: #ffffff;
+  }
+  .nav_brand1{
+    display: none;
+  }
+}
+
+/* ////////////////////////////////////////////////////////////////////////// */
+/* Start media breakpoint section */
+/* ////////////////////////////////////////////////////////////////////////// */

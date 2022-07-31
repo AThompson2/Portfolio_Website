@@ -1,0 +1,95 @@
+{% extends "Website/base2.html" %}
+{% load static %}
+
+
+{% block content %}
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- Google font links and link to corrisponding CSS page -->
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+<link rel="stylesheet" href="{% static 'CSS/ContactMe.css' %}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script src="https://kit.fontawesome.com/be0a041bc5.js" crossorigin="anonymous"></script>
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- End Google font links and link to corrisponding CSS page -->
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- Start Overall Contact section -->
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+<div class="contact">
+
+  <!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
+  <!-- Start top section -->
+  <!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+  <div class="row">
+    <div class="col-lg-3 col-md-1 col-sm-0"></div>
+    <div class="top_section TimeOne col-lg-3 col-md-5 col-sm-6">
+      <h1 id="headding_font" class="">Contact</h1>
+      <p id="paragraph__font1" class="">Feel free to view some of my code on GitHub or visit my profile on Linkedin.</p>
+      <p id="paragraph__font1" class="">If you wish to contact me, send a message below in the contact form and I will reply as soon as possible.</p>
+    </div>
+    <div id="icon_section" class="col-lg-3 col-md-5 col-sm-6 TimeOne">
+      <a id="link" href="https://github.com/AThompson2"><i id="icon1" class="fab fa-github-square fa-5x"></i></a>
+      <!-- <i id="icon2" class="animated-text fab fa-facebook-square fa-5x"></i><br> -->
+      <a id="link" href="https://au.linkedin.com/"><i id="icon3" class="fab fa-linkedin fa-5x"></i></a>
+      <!-- <i id="icon4" class="animated-text fab fa-instagram-square fa-5x"></i> -->
+    </div>
+    <div class="col-lg-3 col-md-1 col-sm-0"></div>
+  </div>
+
+  <!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
+  <!-- end top section -->
+  <!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+  <!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
+  <!-- Start bottom Contact section -->
+  <!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+  <div class="row contact_section">
+    <div class="col-lg-2"></div>
+    <div class="name_email_insert TimeTwo col-lg-4">
+      <h2 id="sub_headding1" class="TimeOne">Send me a message</h2>
+      <form class="" action="" method="post">
+        {% csrf_token %}
+        <p class="" id="paragraph__font1">Name</p>
+        <input style="width: 100%" id="name" type="text" name="subject" required id="id_subject">
+        <p class="email2" id="paragraph__font1">Email Address</p>
+        <input style="width: 100%" type="email" id="from_email" name="email" maxlength="254" required id="id_email">
+    </div>
+    <div class="TimeTwo message_box_section col-lg-4">
+      <p class="" id="paragraph__font1">Message</p>
+      <span class="" id="message">{{ form.message }}</span>
+      <div class="">
+        <input id="Button1" type="submit" class="btn btn-primary" value="submit">
+     </div>
+    </div>
+    <div class="col-lg-2"></div>
+    </form>
+  </div>
+
+  <!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
+  <!-- End Bottom Contact section -->
+  <!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+</div>
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- Start Contact section -->
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+<script src="{% static 'javascript/ContactMe.js' %}"></script>
+
+{% endblock %}

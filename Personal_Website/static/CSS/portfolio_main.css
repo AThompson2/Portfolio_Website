@@ -1,0 +1,276 @@
+
+/* ////////////////////////////////////////////////////////////////////////// */
+/* Common classes and ID's */
+/* ////////////////////////////////////////////////////////////////////////// */
+
+#headding_font{
+  font-family: 'Gruppo', cursive;
+  font-weight: bolder;
+  text-align: left;
+}
+
+#headding_font2{
+  font-family: 'Gruppo', cursive;
+  font-weight: bolder;
+  text-align: left;
+}
+
+#c1_font_headding{
+  font-family: 'Gruppo', cursive;
+  font-weight: bolder;
+  font-size: 30px;
+  padding-bottom: 50px;
+}
+
+#paragraph__font1{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #575757;
+  text-align: left;
+}
+
+.card2{
+  color: #575757;
+  font-size: 20px;
+}
+
+.card3{
+  color: #575757;
+  font-size: 12px;
+}
+
+/* ////////////////////////////////////////////////////////////////////////// */
+/* End common classes and ID's */
+/* ////////////////////////////////////////////////////////////////////////// */
+
+
+/* ////////////////////////////////////////////////////////////////////////// */
+/* Start top section */
+/* ////////////////////////////////////////////////////////////////////////// */
+
+.top{
+  background-color: #ffffff;
+  color:#000000;
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+
+.row{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.headding{
+  font-size: 50px;
+  padding-bottom: 25px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.sub_headding{
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  color: #575757
+}
+
+#image_settings{
+  text-align: center;
+  padding-top: 50px;
+  width: 25%;
+  height: 25;
+}
+
+/* ////////////////////////////////////////////////////////////////////////// */
+/* End top section */
+/* ////////////////////////////////////////////////////////////////////////// */
+
+/* ////////////////////////////////////////////////////////////////////////// */
+/* Completed Projcet & comming soon section */
+/* ////////////////////////////////////////////////////////////////////////// */
+
+.content{
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #f2f2f2;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-width: thin;
+  border-color: #c4c4c4;
+}
+
+.Comming_soon_section{
+  background-color: #ffffff;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-width: thin;
+  border-color: #c4c4c4;
+}
+
+#column1{
+  padding-bottom: 50px;
+}
+
+/* ////////////////////////////////////////////////////////////////////////// */
+/* End Completed project & comming soon section */
+/* ////////////////////////////////////////////////////////////////////////// */
+
+/* ////////////////////////////////////////////////////////////////////////// */
+/* Animations and JS classes section */
+/* ////////////////////////////////////////////////////////////////////////// */
+
+.slideUp {
+  animation: animation_slideUp .7s ease-out;
+}
+
+.animated-text {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.animated-text.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.animate-me{
+}
+
+.left_side-entry {
+  animation: anim1 .7s ease-out;
+}
+.right_side-entry {
+  animation: anim2 .7s ease-out;
+}
+
+@keyframes anim1 {
+  0% {
+    opacity: 0;
+    transform: translateX(-30rem);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+@keyframes anim2 {
+  0% {
+    opacity: 0;
+    transform: translateX(30rem);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+.opacity {
+  opacity: 1;
+}
+
+.opacity:hover {
+  opacity: 0.7;
+}
+
+.TimeOne{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #575757;
+  visibility: hidden;
+}
+
+.TimeTwo{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  /* color: #575757; */
+  visibility: hidden;
+}
+
+
+@keyframes animation_slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(200%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.slideUp {
+  animation: animation_slideUp .7s ease-out;
+}
+
+/* ////////////////////////////////////////////////////////////////////////// */
+/* End Animations and JS section */
+/* ////////////////////////////////////////////////////////////////////////// */
+
+/* ////////////////////////////////////////////////////////////////////////// */
+/* Media breakpoints section */
+/* ////////////////////////////////////////////////////////////////////////// */
+
+@media (max-width: 768px) {
+  #headding_font{
+    text-align: center;
+  }
+  #paragraph__font1{
+    text-align: left;
+  }
+  #image_settings{
+    width: 100%;
+  }
+  .top{
+    padding-bottom: 0px;
+  }
+}
+
+@media (max-width:370px) {
+  #headding_font{
+    font-size: 30px;
+  }
+  #paragraph__font1{
+    font-size: 15px;
+  }
+  .card3{
+    display: none;
+  }
+}
+
+@media (max-width:326px) {
+  #headding_font2{
+    font-size: 15px;
+  }
+}
+
+@media (max-width:240px) {
+  #headding_font{
+    font-size: 25px;
+  }
+  #paragraph__font1{
+    font-size: 12px;
+  }
+  #image_settings{
+    display: none;
+  }
+}
+
+@media (max-width:179px) {
+  #headding_font2{
+    display: none;
+  }
+  #c1_font_headding{
+    font-size: 20px;
+  }
+}
+
+
+/* ////////////////////////////////////////////////////////////////////////// */
+/* End Media breakpoints section */
+/* ////////////////////////////////////////////////////////////////////////// */

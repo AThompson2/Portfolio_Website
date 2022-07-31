@@ -1,0 +1,512 @@
+
+/* ///////////////////////////////////////////////////////////////////// */
+/* Common classes and Id's */
+/* ///////////////////////////////////////////////////////////////////// */
+
+#c1_font{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #575757;
+  font-size: 13px;
+}
+
+#c1_font_headding{
+  font-family: 'Gruppo', cursive;
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+#grad {
+  background-color: #ffffff;
+  }
+
+/* ///////////////////////////////////////////////////////////////////// */
+/* End common classes and ID's */
+/* ///////////////////////////////////////////////////////////////////// */
+
+/* ///////////////////////////////////////////////////////////////////// */
+/* Start part 2 */
+/* ///////////////////////////////////////////////////////////////////// */
+
+.c1{
+  color:#2e2e2e;
+  font-family: 'Architects Daughter', cursive;
+}
+
+.col1{
+  background-color: #000000;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: left;
+}
+
+.col2{
+  background-color: #3042e3;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+#image_1{
+  width: 250px;
+  height: 351px;
+}
+
+#c1_font_headding_1{
+  font-family: 'Gruppo', cursive;
+  font-weight:  900;
+  font-size: 55px;
+}
+
+/* ///////////////////////////////////////////////////////////////////// */
+/* End part 2 */
+/* ///////////////////////////////////////////////////////////////////// */
+
+/* ///////////////////////////////////////////////////////////////////// */
+/* Start section C2. skills section with skills image */
+/* ///////////////////////////////////////////////////////////////////// */
+
+.c2{
+  text-align: center;
+  padding-bottom: 50px;
+  background-color: #f2f2f2;
+  padding-top: 50px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-width: thin;
+  border-color: #c4c4c4;
+}
+
+.section1{
+  list-style-type: none;
+  font-size: 30px;
+  color: #000000;
+}
+
+.skills{
+  font-size: 60px;
+  color: #000000;
+}
+
+.sh{
+  color: #000000;
+}
+
+.row{
+  margin-right: 0px;
+}
+
+#background_col1{
+  background-color: #f2f2f2;
+  padding-top: 20px;
+}
+
+#background_col2{
+  background-color: #f2f2f2;
+
+}
+
+#background_col3{
+  background-color: #f2f2f2;
+  padding-top: 20px;
+}
+
+#tech_img{
+  height: 400px;
+  width:400px;
+}
+
+/* ///////////////////////////////////////////////////////////////////// */
+/* End section C2. skills section with skills image */
+/* ///////////////////////////////////////////////////////////////////// */
+
+/* ///////////////////////////////////////////////////////////////////// */
+/* Start skills graph section */
+/* ///////////////////////////////////////////////////////////////////// */
+
+.c3 {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.skills_background {
+  background-color: #3042e3;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.side_bar {
+  border-right-style: solid;
+  border-right-color: #575757;
+  border-width: thin;
+  height: 100px;
+  color: #575757;
+}
+
+.skills_headding {
+  color: #000000;
+  text-align: center;
+  font-size: 60px;
+}
+
+.skills_list {
+  text-align: center;
+  list-style-type: none;
+  border-bottom-style: solid;
+  border-bottom-color: #000000;
+  border-width: thin;
+  height: 400px;
+}
+
+.li0 {
+  font-size: 15px;
+  height: 400px;
+}
+
+.li1 {
+  display: inline;
+  width: 9%;
+  height: 200px;
+  background-color: #4D73FF;
+  margin-left: 40px;
+  margin-right: 10px;
+  color: #ffffff;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  border-top-style: double;
+  border-right-style: double;
+  border-color: #ffffff
+}
+
+.li2 {
+  display: inline;
+  width: 9%;
+  height: 200px;
+  background-color: #004DC9;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #ffffff;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  border-top-style: double;
+  border-right-style: double;
+  border-color: #ffffff
+}
+
+.li3 {
+  display: inline;
+  width: 9%;
+  height: 120px;
+  background-color: #4D73FF;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #ffffff;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  border-top-style: double;
+  border-right-style: double;
+  border-color: #ffffff
+}
+
+.li4 {
+  display: inline;
+  width: 9%;
+  height: 200px;
+  background-color: #004DC9;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #ffffff;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  border-top-style: double;
+  border-right-style: double;
+  border-color: #ffffff
+}
+
+.li5 {
+  display: inline;
+  width: 9%;
+  height: 200px;
+  background-color: #4D73FF;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #ffffff;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  border-top-style: double;
+  border-right-style: double;
+  border-color: #ffffff
+}
+
+.li6 {
+  display: inline;
+  width: 9%;
+  height: 40px;
+  background-color: #004DC9;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #ffffff;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  border-top-style: double;
+  border-right-style: double;
+  border-color: #ffffff
+}
+
+.li7 {
+  display: inline;
+  width: 9%;
+  height: 120px;
+  background-color: #4D73FF;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #ffffff;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  border-top-style: double;
+  border-right-style: double;
+  border-color: #ffffff
+}
+
+#c1_font1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  color: #575757;
+  padding-right: 5px;
+}
+
+/* ///////////////////////////////////////////////////////////////////// */
+/* End Start skills graph section */
+/* ///////////////////////////////////////////////////////////////////// */
+
+/* ///////////////////////////////////////////////////////////////////// */
+/* Start recent project section */
+/* ///////////////////////////////////////////////////////////////////// */
+
+.part4{
+  text-align: center;
+  background-color: #f2f2f2;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-width: thin;
+  border-color: #c4c4c4;
+}
+
+.recent_projects{
+  font-size: 50px;
+  color: #000000;
+}
+
+.Final_Section{
+  width: 800px;
+}
+
+.card1{
+  color: #000000;
+}
+
+.card1_paragraph{
+  color: #000000;
+}
+
+#c1_font_headding_card{
+  font-family: 'Gruppo', cursive;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+/* ///////////////////////////////////////////////////////////////////// */
+/* End recent section */
+/* ///////////////////////////////////////////////////////////////////// */
+
+
+/* ///////////////////////////////////////////////////////////////////// */
+/* Unknown elements section */
+/* ///////////////////////////////////////////////////////////////////// */
+
+.extra {
+  width: 350px;
+  height: 350px;
+  margin-top: 10px;
+  border: 4px solid rgb(20, 20, 120);
+  text-align: center;
+  padding: 20px;
+}
+
+.img{
+  width: 400px;
+  height: 400px;
+}
+
+.last_section{
+  text-align: center;
+  align-self: center;
+  justify-content: center;
+}
+
+/* ///////////////////////////////////////////////////////////////////// */
+/* End unknown elements section */
+/* ///////////////////////////////////////////////////////////////////// */
+
+/* ///////////////////////////////////////////////////////////////////// */
+/* Animations section */
+/* ///////////////////////////////////////////////////////////////////// */
+
+.animated-text {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.animated-text.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.animate-me {}
+
+.left_side-entry {
+  animation: anim1 .7s ease-out;
+}
+
+.right_side-entry {
+  animation: anim2 .7s ease-out;
+}
+
+@keyframes anim1 {
+  0% {
+    opacity: 0;
+    transform: translateX(-30rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+@keyframes anim2 {
+  0% {
+    opacity: 0;
+    transform: translateX(30rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+.opacity {
+  opacity: 1;
+}
+
+.opacity:hover {
+  opacity: 0.7;
+}
+
+.TimeOne{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #575757;
+  visibility: hidden;
+}
+
+.TimeTwo{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  /* color: #575757; */
+  visibility: hidden;
+}
+
+
+@keyframes animation_slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(200%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.slideUp {
+  animation: animation_slideUp .7s ease-out;
+}
+
+/* ///////////////////////////////////////////////////////////////////// */
+/* End Animations section */
+/* ///////////////////////////////////////////////////////////////////// */
+
+/* ///////////////////////////////////////////////////////////////////// */
+/* Media Breakpoints section */
+/* ///////////////////////////////////////////////////////////////////// */
+
+@media screen and (max-width: 1024px) {
+    .skills_background {
+        display: none !important;
+    }
+}
+
+@media (max-width: 991px) {
+  .col1{
+    padding-bottom: 0px;
+  }
+  .col2{
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 528px) {
+  #tech_img{
+    display: none;
+  }
+}
+
+@media (max-width: 770px) {
+  .card1_paragraph{
+    display: none;
+  }
+  #c1_font_headding_card{
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 382px) {
+  #image_1{
+    display: none;
+  }
+  #c1_font_headding_1{
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 180px) {
+  #c1_font{
+    font-size: 13px;
+  }
+  #c1_font_headding{
+    font-size: 20px;
+  }
+  #c1_font_headding_1{
+    font-size: 30px;
+  }
+  #c1_font_headding_card{
+    display: none;
+  }
+}
+
+
+/* ///////////////////////////////////////////////////////////////////// */
+/* End Media Breakpoints section */
+/* ///////////////////////////////////////////////////////////////////// */

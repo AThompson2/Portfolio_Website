@@ -1,0 +1,43 @@
+{% extends "Website/base.html" %}
+{% load static %}
+
+{% block content %}
+
+<!--////////////////////////////////////////////////////////////////////////////  -->
+<!--Start google fonts and CSS link section  -->
+<!--///////////////////////////////////////////////////////////////////////////  -->
+
+<link rel="stylesheet" href="{% static 'css/HomePage.css' %}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'CSS/AboutMe.css' %}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Montagu+Slab:wght@400;600;700&display=swap" rel="stylesheet">
+
+<!--////////////////////////////////////////////////////////////////////////////  -->
+<!--End google fonts and CSS link section  -->
+<!--///////////////////////////////////////////////////////////////////////////  -->
+
+<!--////////////////////////////////////////////////////////////////////////////  -->
+<!--Start figure section  -->
+<!--///////////////////////////////////////////////////////////////////////////  -->
+
+<div class="figure">
+    <div class="figcaption">
+      <h1 id="name_headding" class="h">Arron Thompson</h1>
+      <h1 id="name_headding" class="h">Web Development</h1>
+      <h4 id="sub_headding" class="he">Full Stack Junior Web developer</h4>
+    </div>
+    <img id="IMG_1" class="animate-me img_new" src="{% static 'images/HomePage_background.png' %}">
+</div>
+
+<!--////////////////////////////////////////////////////////////////////////////  -->
+<!--End figure section  -->
+<!--///////////////////////////////////////////////////////////////////////////  -->
+
+
+<script src="{% static 'javascript/HomePage.js' %}"></script>
+
+{% endblock %}

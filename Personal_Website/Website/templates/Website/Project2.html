@@ -1,0 +1,183 @@
+{% extends "Website/base2.html" %}
+{% load static %}
+
+{% block content %}
+
+<!--////////////////////////////////////////////////////////////////////////////  -->
+<!--Start google fonts and CSS link section  -->
+<!--///////////////////////////////////////////////////////////////////////////  -->
+
+<link rel="stylesheet" href="{% static 'CSS/Project2.css' %}">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script src="https://kit.fontawesome.com/be0a041bc5.js" crossorigin="anonymous"></script>
+
+<!--////////////////////////////////////////////////////////////////////////////  -->
+<!--End google fonts and CSS link section  -->
+<!--///////////////////////////////////////////////////////////////////////////  -->
+
+<!--////////////////////////////////////////////////////////////////////////////  -->
+<!--Start top2 section  -->
+<!--///////////////////////////////////////////////////////////////////////////  -->
+
+<div class="top2">
+  <div class="row">
+    <div class="col-xl-3 col-lg-1 col-md-1"></div>
+    <div class="col-xl-3 col-lg-5 col-md-5">
+      <h1 id="headding_font" class="TimeOne">Portfolio Website</h1>
+    </div>
+    <div id="img_section" class="col-xl-3 col-lg-5 col-md-5"> <img id="top_image" class="TimeOne" src="{% static 'images/Portfolio_Website_Img.png' %}" alt=""> </div>
+    <div class="col-xl-3 col-lg-1 col-md-1"></div>
+  </div>
+</div>
+
+<!--////////////////////////////////////////////////////////////////////////////  -->
+<!--End top2 section  -->
+<!--///////////////////////////////////////////////////////////////////////////  -->
+
+<!--////////////////////////////////////////////////////////////////////////////  -->
+<!--Start top3 section  -->
+<!--///////////////////////////////////////////////////////////////////////////  -->
+
+<div class="top3">
+  <div class="container">
+    <p id="paragraph__font1" class="TimeTwo">This is a presentation of my personal Portfolio Website that i completely built myself.</p>
+    <p id="paragraph__font1" class="TimeTwo">I have used my portfolio website as a practice project to add to my portfolio. It was a great project to hone my web development skills.</p>
+    <p id="paragraph__font1" class="TimeTwo">The websites purpose is to showcase some of my web development work and tell a little bit about myself and my skills</p>
+    <p id="paragraph__font1" class="TimeTwo"> So with all that in mind i have created the website as you are currently on. It will be a project that is never finsihed and i will constantly be upgrading
+      it as i learn new skills and apply them to this website.</p><br><br><br>
+    <div id="link1" class="row">
+      <div class="col-lg-4"></div>
+      <div class="col-lg-4">
+        <div id="centerBlock" class="TimeOne">
+          <a href="https://github.com/AThompson2">
+            <h3 class="rounded" id="link">See My Personal Portfolio Website Code on GitHub</h3>
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-4"></div>
+    </div>
+  </div>
+</div>
+
+<!--////////////////////////////////////////////////////////////////////////////  -->
+<!--End top3 section  -->
+<!--///////////////////////////////////////////////////////////////////////////  -->
+
+<!--////////////////////////////////////////////////////////////////////////////  -->
+<!--Start content card section  -->
+<!--///////////////////////////////////////////////////////////////////////////  -->
+
+<div id="section2" class="container">
+  <div class="row d-flex">
+    {% for step in step %}
+    <div id="card_section" class="col-lg-4 col-md-6 col-sm-12 col-">
+      <div class="card-deck h-95">
+        <div id="card-style" class="TimeTwo card">
+          <img src="{{ step.card_image.url }}" class="card-img-top " alt="...">
+          <div class="card-body">
+            <h5 id="sub_headding1" class="card-title card3">{{ step.headding_step }}</h5>
+            <p id="paragraph__font1" class="card-text card3">{{ step.short_description }}</p>
+            {% if step == AA %}
+            <button id="button-style" type="button" class="opacity btn btn-primary" data-toggle="modal" data-target="#one"> <span id="button_content"> More Information </span> </button>
+            <div class="modal fade" id="one" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+              <div id="modal-xl" class="modal-dialog  modal-xl" role="document">
+                <div id="mod1" class="modal-content container">
+                  {% for cont in content1 %}
+                  <div id="cont" class="container">
+                    <h4 id="sub_headding1">{{ cont.headding_content }}</h4>
+                    <p id="paragraph__font1">{{ cont.content_paragraph }}</p><br><br>
+                    <img class="img-fluid rounded mx-auto d-block inline_images" src="{{ cont.image_content.url }}" alt="..">
+                  </div>
+                  {% endfor %}
+                  <button id="button-style_modal_close" type="button" class="btn btn-primary" data-dismiss="modal"> <span id="button_content"> Close</span> </button>
+                </div>
+              </div>
+            </div>
+            {% elif step == DD %}
+            <button id="button-style" type="button" class="opacity btn btn-primary" data-toggle="modal" data-target="#two"><span id="button_content"> More Information </span></button>
+            <div class="modal fade" id="two" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+              <div id="modal-xl" class="modal-dialog modal-xl" role="document">
+                <div id="mod1" class="modal-content container">
+                  {% for cont in content21 %}
+                  <div id="cont" class="container">
+                    <h4 id="sub_headding1">{{ cont.headding_content }}</h4>
+                    <p id="paragraph__font1">{{ cont.content_paragraph }}</p><br><br>
+                    <img class="img-fluid rounded mx-auto d-block inline_images" src="{{ cont.image_content.url }}" alt="..">
+                  </div>
+                  {% endfor %}
+                  <button id="button-style_modal_close" type="button" class="btn btn-primary" data-dismiss="modal"> <span id="button_content"> Close</span> </button>
+                </div>
+              </div>
+            </div>
+            {% elif step == HH %}
+            <button id="button-style" type="button" class="opacity btn btn-primary" data-toggle="modal" data-target="#three"><span id="button_content"> More Information </span></button>
+            <div class="modal fade" id="three" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+              <div id="modal-xl" class="modal-dialog modal-xl" role="document">
+                <div id="mod1" class="modal-content container">
+                  {% for cont in content3 %}
+                  <div id="cont" class="container">
+                    <h4 id="sub_headding1">{{ cont.headding_content }}</h4>
+                    <p id="paragraph__font1">{{ cont.content_paragraph }}</p><br><br>
+                    <img class="img-fluid rounded mx-auto d-block inline_images" src="{{ cont.image_content.url }}" alt="..">
+                  </div>
+                  {% endfor %}
+                  <button id="button-style_modal_close" type="button" class="btn btn-primary" data-dismiss="modal"> <span id="button_content"> Close</span> </button>
+                </div>
+              </div>
+            </div>
+            {% elif step == KK %}
+            <button id="button-style" type="button" class="opacity btn btn-primary" data-toggle="modal" data-target="#four"><span id="button_content"> More Information </span></button>
+            <div class="modal fade" id="four" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+              <div id="modal-xl" class="modal-dialog modal-xl" role="document">
+                <div id="mod1" class="modal-content container">
+                  {% for cont in content4 %}
+                  <div id="cont" class="container">
+                    <h4 id="sub_headding1">{{ cont.headding_content }}</h4>
+                    <p id="paragraph__font1">{{ cont.content_paragraph }}</p><br><br>
+                    <img class="img-fluid rounded mx-auto d-block inline_images" src="{{ cont.image_content.url }}" alt="..">
+                  </div>
+                  {% endfor %}
+                  <button id="button-style_modal_close" type="button" class="btn btn-primary" data-dismiss="modal"> <span id="button_content"> Close</span> </button>
+                </div>
+              </div>
+            </div>
+            {% elif step == NN %}
+            <button id="button-style" type="button" class="opacity btn btn-primary" data-toggle="modal" data-target="#five"><span id="button_content"> More Information </span></button>
+            <div class="modal fade" id="five" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+              <div id="modal-xl" class="modal-dialog modal-xl" role="document">
+                <div id="mod1" class="modal-content container">
+                  {% for cont in content5 %}
+                  <div id="cont" class="container">
+                    <h4 id="sub_headding1">{{ cont.headding_content }}</h4>
+                    <p id="paragraph__font1">{{ cont.content_paragraph }}</p><br><br>
+                    <img class="img-fluid rounded mx-auto d-block inline_images" src="{{ cont.image_content.url }}" alt="..">
+                  </div>
+                  {% endfor %}
+                  <button id="button-style_modal_close" type="button" class="btn btn-primary" data-dismiss="modal"> <span id="button_content"> Close</span> </button>
+                </div>
+              </div>
+            </div>
+            {% endif %}
+          </div>
+        </div><br><br>
+      </div><br><br>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+<!--////////////////////////////////////////////////////////////////////////////  -->
+<!--End content card section  -->
+<!--///////////////////////////////////////////////////////////////////////////  -->
+
+<script src="{% static 'javascript/Project2.js' %}"></script>
+
+{% endblock %}

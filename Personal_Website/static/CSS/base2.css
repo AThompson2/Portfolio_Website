@@ -1,0 +1,127 @@
+
+/* ////////////////////////////////////////////////////////////////////////// */
+/* Start navbar section */
+/* ////////////////////////////////////////////////////////////////////////// */
+
+li{
+  font-size: 25px;
+}
+
+.link_one{
+  visibility: hidden;
+}
+
+#nav2{
+  background-color: #1f1f24;
+  border-style: solid;
+  border-bottom-width: 1px;
+  border-top-width: 0px;
+  border-color: #ffffff;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  font-family: 'Architects Daughter', cursive;
+}
+
+#name_headding{
+  font-family: 'Gruppo', cursive;
+  font-weight: bolder;
+  color: #ffffff;
+}
+
+.navbar-brand{
+  font-family: 'Montagu Slab', serif;
+}
+
+span:hover { color: #005bba; }
+
+#navbarNavDropdown{
+  padding-left: 30%;
+  color: #ffffff;
+}
+
+#button1{
+  border-color: #ffffff;
+}
+
+span{
+  color:#ffffff;
+}
+
+.nav-link{
+  color:#ffffff;
+}
+
+.content1{
+  /* padding-bottom: 100px; */
+}
+
+.nav_brand2{
+  display: none;
+}
+
+/* ////////////////////////////////////////////////////////////////////////// */
+/* End navbar section */
+/* ////////////////////////////////////////////////////////////////////////// */
+
+/* ////////////////////////////////////////////////////////////////////////// */
+/* Start footer section */
+/* ////////////////////////////////////////////////////////////////////////// */
+
+#footer_items{
+  color: #ffffff;
+  font-family: 'Architects Daughter', cursive;
+  background-color: #1f1f24;
+  font-size: 15px;
+}
+
+#footer_items_brand{
+    color: #ffffff;
+    font-family: 'Architects Daughter', cursive;
+    background-color: #1f1f24;
+    font-size: 15px;
+}
+
+#footer_items:hover { color: #005bba; }
+
+#footer_items_brand:hover { color: #005bba; }
+
+.footer{
+  background-color: #1f1f24;
+}
+
+/* ////////////////////////////////////////////////////////////////////////// */
+/* End footer section */
+/* ////////////////////////////////////////////////////////////////////////// */
+
+/* ////////////////////////////////////////////////////////////////////////// */
+/* Start media breakpoint section */
+/* ////////////////////////////////////////////////////////////////////////// */
+
+@media (max-width: 430px) {
+  #nav1{
+    background-color: #1f1f24;
+  }
+}
+
+@media (max-width: 256px) {
+  li {
+    font-size: 17px;
+  }
+  .nav_brand2{
+    display: inherit;
+    color: #ffffff;
+  }
+  .nav_brand1{
+    display: none;
+  }
+}
+
+@media (max-width:576px) {
+  #footer_items{
+    display: none;
+  }
+}
+
+/* ////////////////////////////////////////////////////////////////////////// */
+/* Start media breakpoint section */
+/* ////////////////////////////////////////////////////////////////////////// */

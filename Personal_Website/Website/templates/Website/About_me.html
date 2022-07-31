@@ -1,0 +1,200 @@
+{% extends "Website/base2.html" %}
+{% load static %}
+
+
+{% block content %}
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- Google font links and link to corrisponding CSS page -->
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<link rel="stylesheet" href="{% static 'CSS/AboutMe.css' %}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Montagu+Slab:wght@400;600;700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Khula:wght@600&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- End Google font links -->
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- Start total div section. General layout for the page -->
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<div class="total">
+
+
+  <!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+  <!-- Start part2. Contains image at the top and self information -->
+  <!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
+  <div class="part2">
+    <div id="grad" class="row">
+      <div id="grad" class="col-xl-2 col-lg-1 col-xs- col_extra"></div>
+      <div id="grad" class="col-xl-4 col-lg-5 col-md-12 col-xs-12 col1">
+        <div class="container">
+          <div class="c1 TimeOne">
+
+            <h1 class="" id="c1_font_headding_1">About</h1>
+            <h1 class="" id="c1_font_headding">Arron Thompson</h1>
+            <h4 class="">Full stack Junior Web Developer</h4><br>
+            <p class="" id="c1_font">I am an entry level Web Developer looking to make this hobby into a career.</p>
+            <p class="" id="c1_font">I study Computer Science as a first year student with a major in Software Development.</p>
+            <p class="" id="c1_font">Programming is quickly becomming my passion!</p>
+          </div>
+        </div>
+      </div>
+      <div id="grad" style="text-align:center;" class="col-xl-4 col-lg-5 col-md-12 col-xs-12 col2">
+        <img id="image_1" class="TimeOne rounded" src="{% static 'images/Placeholder_Image.png' %}" alt="">
+      </div>
+      <div id="grad" class="col-xl-2 col-lg-1 col-xs-0 col_extra"></div>
+    </div>
+
+
+  </div>
+  <!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+  <!--End part2 -->
+  <!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+  <!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+  <!--Start c2 section. Skills section with skills image -->
+  <!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
+  <div class="c2">
+    <h1 id="c1_font_headding" class="TimeTwo skills">Skills</h1><br>
+    <div id="background_col" class="row" style="text-align:center;">
+      <div id="background_col1" class="col-md-12 col-lg-3 col-xs-6">
+
+        <h1 id="c1_font_headding" class="TimeOne sh">Front-End</h1><br>
+        <ul class="section1 TimeOne">
+          <li id="c1_font" class="">HTML</li><br>
+          <li id="c1_font" class="">CSS</li><br>
+          <li id="c1_font" class="">Bootstrap</li><br>
+          <li id="c1_font" class="">JavaScript</li><br>
+        </ul>
+      </div>
+      <div id="background_col2" class="col-md-12 col-lg-6 col-xs-0">
+        <img id="tech_img" class="TimeTwo rounded" src="{% static 'images/Technologies_img.png' %}" alt="">
+      </div>
+      <div id="background_col3" class="col-md-12 col-lg-3 col-xs-6">
+        <h1 id="c1_font_headding" class="TimeOne sh">Back-End</h1><br>
+        <ul class="section1 TimeOne">
+          <li id="c1_font" class="">Python</li><br>
+          <li id="c1_font" class="">Django</li><br>
+          <li id="c1_font" class="">SQlite</li><br>
+          <li id="c1_font" class="">PostgreSQL</li><br>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+  <!-- End c2 skills section -->
+  <!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+  <!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+  <!-- Start Skills graph section -->
+  <!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
+  <div class="row skill_disapear">
+    <div id="grad" class="col skills_background">
+      <div class="container c3">
+        <div class="row">
+          <div class="col-12">
+            <h2 id="c1_font_headding" class="TimeTwo skills_headding">My Skills</h2>
+            <ul class="d-flex align-items-end nav skills_list TimeTwo">
+              <li class="li0">
+                <div id="c1_font1" class="side_bar"><div class="">Expert</div></div>
+                <div id="c1_font1" class="side_bar"><div class="">Professional</div></div>
+                <div id="c1_font1" class="side_bar"><div class="">Intermediate</div></div>
+                <div id="c1_font1" class="side_bar"><div class="">Beginner</div></div>
+              </li>
+              <li class="li1 rounded">
+                <div class"">50%</div>
+                <div class"">HTML</div>
+              </li>
+              <li class="li2 rounded">
+                <div class"">50%</div>
+                <div class"">CSS</div>
+              </li>
+              <li class="li3 rounded">
+                <div class"">30%</div>
+                <div class"">JS</div>
+              </li>
+              <li class="li4 rounded">
+                <div class"">50%</div>
+                <div class"">Python</div>
+              </li>
+              <li class="li5 rounded">
+                <div class"">50%</div>
+                <div class"">Django</div>
+              </li>
+              <li class="li6 rounded">
+                <div class"">10%</div>
+                <div class"">SQLite</div>
+              </li>
+              <li class="li7 rounded">
+                <div class"">20%</div>
+                <div class"">PostgreSQL</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+  <!-- End skills graph section -->
+  <!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+  <!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+  <!-- Start Recent projects section at the bottom of the page -->
+  <!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
+  <div class="part4">
+    <h2 id="c1_font_headding" class="TimeTwo recent_projects">Recent projects</h2><br>
+    <div class="container Final_Section">
+      <div class="card-deck">
+
+        <div class="TimeTwo opacity card">
+          <a href="{% url 'Website:Project2' %}"><img class="card-img-top" src="{% static 'images/Portfolio_img.png' %}" alt="Card image cap"></a>
+          <div class="card-body">
+            <h5 id="c1_font_headding_card" class="card1 card-title">Personal Portfolio Website</h5>
+            <p id="c1_font" class="card1_paragraph card-text">This is my Personal Portfolio Website that you are currently on. It displays my skills, projects that I have completed,
+              links to my GitHub/Linkdin profiles and a contact form that sends messages directly to my email.</p>
+          </div>
+        </div>
+
+        <div class="TimeTwo opacity card">
+          <a href="{% url 'Website:Project1' %}"><img src="{% static 'images/HomePage_NCD.png' %}" class="card-img-top" alt="..."></a>
+          <div class="card-body">
+            <h5 id="c1_font_headding_card" class="card1 card-title">1st Project, The Nomad Camper Damper</h5>
+            <p id="c1_font" class="card1_paragraph card-text">This project was a little rough around the edges as it was my first attempt at building a full website.
+              It is a future business idea for a friend that i built a pseudo website for with the aim of practicing my skills in web development.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+  <!-- End recent projects section -->
+  <!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+<script src="{% static 'javascript/AboutMe.js' %}"></script>
+
+</div>
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+                                <!-- End Total div section -->
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+{% endblock %}

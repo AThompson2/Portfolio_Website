@@ -1,0 +1,192 @@
+
+/* ////////////////////////////////////////////////////////////////////////// */
+/* start common classes and ID's */
+/* ////////////////////////////////////////////////////////////////////////// */
+
+
+
+/* ////////////////////////////////////////////////////////////////////////// */
+/* End common classes and ID's */
+/* ////////////////////////////////////////////////////////////////////////// */
+
+/* ////////////////////////////////////////////////////////////////////////// */
+/* start Figure section */
+/* ////////////////////////////////////////////////////////////////////////// */
+
+.HP{
+  color: white;
+  font-weight: bold;
+  position:absolute;
+  font-family: Noto serif;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+#name_headding{
+  font-family: 'Gruppo', cursive;
+  font-weight: bolder;
+}
+
+#sub_headding{
+  font-family: 'Architects Daughter', cursive;
+}
+
+#paragraph__font1{
+  font-family: 'Montserrat', sans-serif;
+  color: #575757;
+}
+
+.h{
+  font-size: 100%;
+}
+
+.fade-in{
+  opacity: 0;
+  transition:250ms ease-in;
+}
+
+.fade-in.appear{
+  opacity: 1;
+}
+
+.he{
+  font-size: 70%;
+}
+
+.image_hp{
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+
+.figure {
+    /* position: relative; */
+    display: inline-block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.figure .figcaption {
+    text-align: center;
+    width:100%;
+    font-family: Noto serif;
+    font-size: 40px; line-height: 0;
+    color:white;
+    position:absolute; top:40%;
+    z-index:1;
+    visibility: hidden;
+}
+
+.figure img {
+    width: 100vw;
+    height: 100vh;
+}
+
+.html{
+  -webkit-text-size-adjust: none;
+}
+
+#IMG_1{
+  vertical-align: bottom;
+}
+
+.img_new{
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* ////////////////////////////////////////////////////////////////////////// */
+/* End figure section */
+/* ////////////////////////////////////////////////////////////////////////// */
+
+/* ////////////////////////////////////////////////////////////////////////// */
+/* Start animations and JS calsses section */
+/* ////////////////////////////////////////////////////////////////////////// */
+
+.animated-text {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.animated-text.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.animate-me{
+}
+
+.left.side-entry {
+  animation: anim1 .7s ease-out;
+}
+.right.side-entry {
+  animation: anim2 .7s ease-out;
+}
+
+/* ////////////////////////////////////////////////////////////////////////// */
+/* End animations and JS calsses section */
+/* ////////////////////////////////////////////////////////////////////////// */
+
+/* ////////////////////////////////////////////////////////////////////////// */
+/* Start media breakpoint section */
+/* ////////////////////////////////////////////////////////////////////////// */
+
+@keyframes anim1 {
+  0% {
+    opacity: 0;
+    transform: translateX(-30rem) ;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+@keyframes anim2 {
+  0% {
+    opacity: 0;
+    transform: translateX(30rem) rotate(45deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+@media (max-width: 430px) {
+    img {
+      display: none;
+    }
+    .figure{
+      background-color: #1f1f24;
+      width: 100vh;
+      height: 100vh;
+      display: inherit;
+    }
+    #name_headding {
+      font-size: 30px;
+    }
+    #sub_headding{
+      font-size: 20px;
+    }
+}
+
+@media (max-width: 256px) {
+  #name_headding {
+    font-size: 20px;
+  }
+  #sub_headding{
+    font-size: 15px;
+  }
+}
+
+/* ////////////////////////////////////////////////////////////////////////// */
+/* End media breakpoint section */
+/* ////////////////////////////////////////////////////////////////////////// */
