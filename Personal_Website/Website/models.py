@@ -7,7 +7,7 @@ from django.db import models
 # Project1
 class Website_content(models.Model):
     headding_content = models.CharField(max_length=50)
-    image_content = models.ImageField(upload_to= 'images/NCD_Website', Blank=True)
+    image_content = models.ImageField(upload_to= 'images/NCD_Website', blank = True)
     content_paragraph = models.CharField(max_length=2000)
 
 
@@ -34,7 +34,7 @@ class Website_steps(models.Model):
 
 class content2(models.Model):
     headding_content = models.CharField(max_length=50)
-    image_content = models.ImageField(upload_to= 'images/NCD_Website', Blank=True)
+    image_content = models.ImageField(upload_to= 'images/NCD_Website', blank = True)
     content_paragraph = models.CharField(max_length=2000)
 
 
