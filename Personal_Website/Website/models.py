@@ -22,7 +22,7 @@ class Website_steps(models.Model):
     card_image = models.ImageField()
     headding_model = models.CharField(max_length=50)
     long_description = models.CharField(max_length=2000)
-    website_cont = models.ManyToManyField(Website_content)
+    website_cont = models.ManyToManyField(Website_content, null=True, blank=True)
 
 
     def __str__(self):
@@ -48,7 +48,7 @@ class steps2(models.Model):
     card_image = models.ImageField()
     headding_model = models.CharField(max_length=50)
     long_description = models.CharField(max_length=2000)
-    website_cont2 = models.ManyToManyField(content2)
+    website_cont2 = models.ManyToManyField(content2, null=True, blank=True)
 
 
     def __str__(self):
