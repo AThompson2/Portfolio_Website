@@ -7,7 +7,7 @@ from django.db import models
 # Project1
 class Website_content(models.Model):
     headding_content = models.CharField(max_length=50)
-    image_content = models.ImageField(upload_to= 'images/NCD_Website', blank=True)
+    image_content = models.ImageField(upload_to= 'images/NCD_Website', blank=True, Null=True)
     content_paragraph = models.CharField(max_length=2000)
 
 
