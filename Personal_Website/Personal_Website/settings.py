@@ -131,7 +131,7 @@ STATICFILES_DIRS = [
      STATIC_DIR,
 
  ]
-STATIC_ROOT = '/home/Arron/Portfolio_Website/Personal_Website/static/STATIC_ROOT'
+STATIC_ROOT = os.path.join(BASE_DIR, 'STATIC_ROOT')
 
 
 MEDIA_URL = '/media/'
