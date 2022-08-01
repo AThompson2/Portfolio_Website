@@ -165,7 +165,7 @@ def Project1(request):
     VV1 = V1.website_steps_set.get()
     CC2 = C2.website_steps_set.get()
     GG2 = G2.website_steps_set.get()
-    SS2 = T2.website_steps_set.get()
+    TT2 = T2.website_steps_set.get()
 
 
     content1 = AAA.website_cont.all().order_by('pk')
@@ -209,7 +209,7 @@ def Project1(request):
                                        'VV1': VV1,
                                        'CC2': CC2,
                                        'GG2': GG2,
-                                       'SS2': SS2,
+                                       'TT2': TT2,
                                         })
 
 
