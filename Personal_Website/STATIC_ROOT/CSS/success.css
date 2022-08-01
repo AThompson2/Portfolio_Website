@@ -1,0 +1,117 @@
+
+/* ////////////////////////////////////////////////////////////////////////// */
+/* start common classes and ID's */
+/* ////////////////////////////////////////////////////////////////////////// */
+
+#headding_font{
+  font-family: 'Gruppo', cursive;
+  font-weight: bolder;
+  text-align: left;
+  font-size: 55px;
+  text-align: center;
+}
+
+#sub_headding1{
+  font-family: 'Gruppo', cursive;
+  font-weight: bolder;
+  text-align: left;
+  font-size: 27px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+#paragraph__font1{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: left;
+  font-size: 17px;
+}
+
+/* ////////////////////////////////////////////////////////////////////////// */
+/* End common classes and ID's */
+/* ////////////////////////////////////////////////////////////////////////// */
+
+/* ////////////////////////////////////////////////////////////////////////// */
+/* start Thank you section */
+/* ////////////////////////////////////////////////////////////////////////// */
+
+.thankyou_section{
+  background-color: #ffffff;
+  padding-top: 150px;
+  padding-bottom: 110px;;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-width: thin;
+  border-color: #c4c4c4;
+  text-align: center;
+  align-items: center;
+}
+
+/* ////////////////////////////////////////////////////////////////////////// */
+/* End thank you section */
+/* ////////////////////////////////////////////////////////////////////////// */
+
+/* ////////////////////////////////////////////////////////////////////////// */
+/* Start animations and JS classes */
+/* ////////////////////////////////////////////////////////////////////////// */
+
+@keyframes animation_slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(200%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.slideUp {
+  animation: animation_slideUp .7s ease-out;
+}
+
+/* ////////////////////////////////////////////////////////////////////////// */
+/* End animations and JS classes */
+/* ////////////////////////////////////////////////////////////////////////// */
+
+/* ////////////////////////////////////////////////////////////////////////// */
+/* start Media breakpoint section */
+/* ////////////////////////////////////////////////////////////////////////// */
+
+@media (max-width:870px) {
+  #headding_font{
+    font-size: 30px;
+  }
+  #sub_headding1{
+    font-size: 25px;
+  }
+  .thankyou_section{
+    padding-bottom:140px;
+  }
+}
+
+@media (max-width:767px) {
+  .thankyou_section{
+    padding-bottom: 150px;
+  }
+}
+
+@media (max-width:360px) {
+  #button_contents{
+    font-size: 10px;
+  }
+  #headding_font{
+    font-size: 15px;
+  }
+  #sub_headding1{
+    font-size: 15px;
+  }
+  .thankyou_section{
+    padding-bottom: 176px;
+  }
+}
+
+/* ////////////////////////////////////////////////////////////////////////// */
+/* End Media breakpoint section */
+/* ////////////////////////////////////////////////////////////////////////// */
