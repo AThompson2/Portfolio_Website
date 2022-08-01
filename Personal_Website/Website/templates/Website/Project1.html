@@ -275,6 +275,7 @@
                     {% for cont in content12 %}
                     <h4 id="sub_headding1">{{ cont.headding_content }}</h4>
                     <p id="paragraph__font1">{{ cont.content_paragraph }}</p><br>
+                    <img class="img-fluid rounded mx-auto d-block inline_images" src="{{ cont.image_content.url }}" alt="..">
                     {% endfor %}
                     <button id="button-style_modal_close" type="button" class="btn btn-primary" data-dismiss="modal"> <span id="button_content"> Close</span> </button>
                   </div>
