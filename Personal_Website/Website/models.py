@@ -6,9 +6,9 @@ from django.db import models
 
 # Project1
 class Website_content(models.Model):
-    headding_content = models.CharField(max_length=50)
+    headding_content = models.CharField(max_length=50, blank=True)
     image_content = models.ImageField(upload_to= 'images/NCD_Website', null=True, blank=True)
-    content_paragraph = models.CharField(max_length=2000)
+    content_paragraph = models.CharField(max_length=2000, blank=True)
 
 
     def __str__(self):
@@ -17,12 +17,12 @@ class Website_content(models.Model):
 
 
 class Website_steps(models.Model):
-    headding_step = models.CharField(max_length=50)
-    short_description = models.CharField(max_length=2000)
-    card_image = models.ImageField()
-    headding_model = models.CharField(max_length=50)
-    long_description = models.CharField(max_length=2000)
-    website_cont = models.ManyToManyField(Website_content, null=True, blank=True)
+    headding_step = models.CharField(max_length=50, blank=True)
+    short_description = models.CharField(max_length=2000, blank=True)
+    card_image = models.ImageField(blank=True)
+    headding_model = models.CharField(max_length=50, blank=True)
+    long_description = models.CharField(max_length=2000, blank=True)
+    website_cont = models.ManyToManyField(Website_content, blank=True)
 
 
     def __str__(self):
@@ -33,9 +33,9 @@ class Website_steps(models.Model):
 # Start project2
 
 class content2(models.Model):
-    headding_content = models.CharField(max_length=50)
+    headding_content = models.CharField(max_length=50, blank=True)
     image_content = models.ImageField(upload_to= 'images/NCD_Website', null=True, blank=True)
-    content_paragraph = models.CharField(max_length=2000)
+    content_paragraph = models.CharField(max_length=2000, blank=True)
 
 
     def __str__(self):
@@ -43,12 +43,12 @@ class content2(models.Model):
 
 
 class steps2(models.Model):
-    headding_step = models.CharField(max_length=50)
-    short_description = models.CharField(max_length=2000)
-    card_image = models.ImageField()
-    headding_model = models.CharField(max_length=50)
-    long_description = models.CharField(max_length=2000)
-    website_cont2 = models.ManyToManyField(content2, null=True, blank=True)
+    headding_step = models.CharField(max_length=50, blank=True)
+    short_description = models.CharField(max_length=2000, blank=True)
+    card_image = models.ImageField(blank=True)
+    headding_model = models.CharField(max_length=50, blank=True)
+    long_description = models.CharField(max_length=2000, blank=True)
+    website_cont2 = models.ManyToManyField(content2, blank=True)
 
 
     def __str__(self):
