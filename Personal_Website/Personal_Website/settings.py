@@ -138,17 +138,6 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
-
-# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend' # new
-# DEFAULT_FROM_EMAIL = 'at.webdevelopment1@gmail.com'
-# SENDGRID_API_KEY = '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'
-# EMAIL_HOST = 'smtp.sendgrid.net' # new
-# EMAIL_HOST_USER = '	apikey' # new
-# EMAIL_HOST_PASSWORD = 'SENDGRID_API_KEY' # new
-# EMAIL_PORT = 587 # new
-# EMAIL_USE_TLS = True # new
-
-
 CONTACT_EMAIL = 'at.webdevelopment1@gmail.com'
 ADMIN_EMAIL = ['at.webdevelopment1@gmail.com', ]
 
