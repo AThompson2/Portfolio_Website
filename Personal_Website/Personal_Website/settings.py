@@ -29,8 +29,8 @@ SECRET_KEY = str(os.getenv('SECRET_KEY'))
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = str(os.getenv('ALLOWED_HOSTS'))
-
+# ALLOWED_HOSTS = str(os.getenv('ALLOWED_HOSTS'))
+ALLOWED_HOSTS = ['www.arronthompson.com']
 
 # Application definition
 
@@ -131,7 +131,7 @@ STATICFILES_DIRS = [
      STATIC_DIR,
 
  ]
-STATIC_ROOT = 'C:/Users/azza1/OneDrive/Desktop/Personal_Website/Personal_Website/static/STATIC_ROOT'
+STATIC_ROOT = '/home/Arron/Portfolio_Website/Personal_Website/static/STATIC_ROOT'
 
 
 MEDIA_URL = '/media/'
