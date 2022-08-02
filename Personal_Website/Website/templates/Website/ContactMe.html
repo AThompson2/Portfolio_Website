@@ -59,8 +59,8 @@
 
   <div class="row contact_section">
     <div class="col-lg-2"></div>
-    <div class="name_email_insert TimeTwo col-lg-4">
-      <h2 id="sub_headding1" class="TimeOne">Send me a message</h2>
+    <div class="name_email_insert TimeOne col-lg-4">
+      <h2 id="sub_headding1" class="">Send me a message</h2>
       <form class="" action="" method="post">
         {% csrf_token %}
         <p class="" id="paragraph__font1">Name</p>
@@ -68,7 +68,7 @@
         <p class="email2" id="paragraph__font1">Email Address</p>
         <input style="width: 100%" type="email" id="from_email" name="email" maxlength="254" required id="id_email">
     </div>
-    <div class="TimeTwo message_box_section col-lg-4">
+    <div class="TimeOne message_box_section col-lg-4">
       <p class="" id="paragraph__font1">Message</p>
       <span class="" id="message">{{ form.message }}</span>
       <div class="">
