@@ -209,7 +209,7 @@ def Project1(request):
                                        'VV1': VV1,
                                        'CC2': CC2,
                                        'GG2': GG2,
-                                       'TT2': TT2,
+                                       'TT23': TT23,
                                         })
 
 
