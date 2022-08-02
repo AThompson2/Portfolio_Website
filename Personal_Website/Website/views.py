@@ -206,7 +206,7 @@ def Project1(request):
                                        'SS': SS,
                                        'JJ1': JJ1,
                                        'RR1': RR1,
-                                       # 'VV1': VV1,
+                                       'VV1': VV1,
                                        # 'CC2': CC2,
                                        # 'GG2': GG2,
                                        # 'TT2': TT2,
