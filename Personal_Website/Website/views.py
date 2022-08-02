@@ -195,7 +195,7 @@ def Project1(request):
                                        'content7': content7,
                                        'content8': content8,
                                        'content99': content99,
-                                       # 'content10': content10,
+                                       'content10': content10,
                                        # 'content11': content11,
                                        # 'content12': content12,
                                        'AA': AA,
@@ -207,7 +207,7 @@ def Project1(request):
                                        'JJ1': JJ1,
                                        'RR1': RR1,
                                        'VV1': VV1,
-                                       # 'CC2': CC2,
+                                       'CC2': CC2,
                                        # 'GG2': GG2,
                                        # 'TT2': TT2,
                                         })
