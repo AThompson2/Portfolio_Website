@@ -6,22 +6,16 @@ observer3 = new IntersectionObserver(entries => {
     if(entry.isIntersecting){
 
       const myTimeout = setTimeout(timeDelay1, i);
-      const mediaQuery = window.matchMedia('(min-width: 767px)')
-      function timeDelay1() {
-          if(mediaQuery.matches) {
-            entry.target.classList.remove('slideUp');
-          }
-          else {
-            entry.target.style.visibility="visible"
-            entry.target.classList.add('slideUp');
-            observer3.unobserve(entry.target);
-          }
 
+      function timeDelay1() {
+          entry.target.style.visibility="visible"
+          entry.target.classList.add('slideUp');
+          observer3.unobserve(entry.target);
       }
     } else {
       entry.target.classList.remove('slideUp');
     }
-  i = i + 0600
+  i = i + 0500
   });
   });
 
