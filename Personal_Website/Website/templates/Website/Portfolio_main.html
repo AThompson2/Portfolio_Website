@@ -24,18 +24,20 @@
 <!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
 <div class="row">
-  <div class="col-xl-2 col-lg-2 col-md-0 col-xs- col_extra"></div>
-  <div class="col-xl-4 col-lg-4 col-md-6 col-xs- col_extra">
-    <div class="top">
-      <h1 id="headding_font" class="TimeOne headding">Portfolio.</h1>
-      <p id="paragraph__font1" class="TimeOne sub_headding">Take a look below at some of the projects that I have done.</p>
-      <p id="paragraph__font1" class="TimeOne sub_headding">I am always working on something new. Watch this space for more projects to come in the future.</p>
+  <div class="TimeOne">
+    <div class="col-xl-2 col-lg-2 col-md-0 col-xs- col_extra"></div>
+    <div class="col-xl-4 col-lg-4 col-md-6 col-xs- col_extra">
+      <div class="top">
+        <h1 id="headding_font" class="headding">Portfolio.</h1>
+        <p id="paragraph__font1" class="sub_headding">Take a look below at some of the projects that I have done.</p>
+        <p id="paragraph__font1" class="sub_headding">I am always working on something new. Watch this space for more projects to come in the future.</p>
+      </div>
     </div>
+    <div id="image_settings" class="col-xl-4 col-lg-4 col-md-6 col-xs- col_extra">
+      <img class="" src="{% static 'images/small_graphic.png' %}" alt="">
+    </div>
+    <div class="col-xl-2 col-lg-2 col-md-0 col-xs- col_extra"></div>
   </div>
-  <div id="image_settings" class="col-xl-4 col-lg-4 col-md-6 col-xs- col_extra">
-    <img class="TimeOne" src="{% static 'images/small_graphic.png' %}" alt="">
-  </div>
-  <div class="col-xl-2 col-lg-2 col-md-0 col-xs- col_extra"></div>
 </div>
 
 <!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
@@ -48,33 +50,34 @@
 
 <div class="content">
   <div class="container">
-    <h2 id="c1_font_headding" class="TimeTwo">Completed Projects</h2>
-    <div class="row d-flex">
-      <div id="column1" class="col-lg-4 col-md-6 col-sm-12">
-        <div id="card-style" class="TimeTwo opacity card h-100">
-          <a href="{% url 'Website:Project2' %}"><img id="img_portfolio" class="card-img-top" src="{% static 'images/Portfolio_img.png' %}" alt="Card image cap"></a>
-          <div class="card-body">
-            <h5 id="headding_font2" class="card2 card-title">My Personal Portfolio Website</h5>
-            <p id="paragraph__font1" class="card3 card-text">This is my Personal Portfolio Website that you are currently on. It displays my skills, projects that I have completed,
-              links to my GitHub/Linkdin profiles and a contact form that sends messages directly to my email.</p>
+    <div class="TimeOne">
+      <h2 id="c1_font_headding" class="">Completed Projects</h2>
+      <div class="row d-flex">
+        <div id="column1" class="col-lg-4 col-md-6 col-sm-12">
+          <div id="card-style" class="opacity card h-100">
+            <a href="{% url 'Website:Project2' %}"><img id="img_portfolio" class="card-img-top" src="{% static 'images/Portfolio_img.png' %}" alt="Card image cap"></a>
+            <div class="card-body">
+              <h5 id="headding_font2" class="card2 card-title">My Personal Portfolio Website</h5>
+              <p id="paragraph__font1" class="card3 card-text">This is my Personal Portfolio Website that you are currently on. It displays my skills, projects that I have completed,
+                links to my GitHub/Linkdin profiles and a contact form that sends messages directly to my email.</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div id="column1" class="col-lg-4 col-md-6 col-sm-12">
-        <div id="card-style" class="TimeTwo opacity card h-100">
-          <a href="{% url 'Website:Project1' %}"><img class="card-img-top" src="{% static 'images/HomePage_NCD.png' %}" alt="Card image cap"></a>
-          <div class="card-body">
-            <h5 id="headding_font2" class="card2 card-title">1st Project, The Nomad Camper Damper Website</h5>
-            <p id="paragraph__font1" class="card3 card-text">This project was a little rough around the edges as it was my first attempt at building a full website.
-              It is a future business idea for a friend that i built a pseudo website for with the aim of practicing my skills in web development.</p>
+        <div id="column1" class="col-lg-4 col-md-6 col-sm-12">
+          <div id="card-style" class="opacity card h-100">
+            <a href="{% url 'Website:Project1' %}"><img class="card-img-top" src="{% static 'images/HomePage_NCD.png' %}" alt="Card image cap"></a>
+            <div class="card-body">
+              <h5 id="headding_font2" class="card2 card-title">1st Project, The Nomad Camper Damper Website</h5>
+              <p id="paragraph__font1" class="card3 card-text">This project was a little rough around the edges as it was my first attempt at building a full website.
+                It is a future business idea for a friend that i built a pseudo website for with the aim of practicing my skills in web development.</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-
 <!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
 <!-- End completed projects section -->
 <!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
