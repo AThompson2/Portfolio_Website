@@ -223,10 +223,10 @@
             <div class="modal fade" id="nine" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
               <div id="modal-xl" class="modal-dialog modal-xl" role="document">
                 <div id="mod1" class="modal-content container">
-                  {% for cont in content9 %}
+                  {% for cont1 in content99 %}
                   <div id="cont" class="container">
-                    <h4 id="sub_headding1">{{ cont.headding_content }}</h4>
-                    <p id="paragraph__font1">{{ cont.content_paragraph }}</p><br>
+                    <h4 id="sub_headding1">{{ cont1.headding_content }}</h4>
+                    <p id="paragraph__font1">{{ cont1.content_paragraph }}</p><br>
                     <img class="img-fluid rounded mx-auto d-block inline_images" src="{{ cont.image_content.url }}" alt="..">
                   </div>
                   {% endfor %}

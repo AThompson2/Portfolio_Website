@@ -134,7 +134,7 @@ def Project1(request):
     FFF = Website_steps.objects.get(pk=6)
     GGG = Website_steps.objects.get(pk=7)
     HHH = Website_steps.objects.get(pk=8)
-    III = Website_steps.objects.get(pk=9)
+    III1 = Website_steps.objects.get(pk=9)
     JJJ = Website_steps.objects.get(pk=10)
     KKK = Website_steps.objects.get(pk=11)
     LLL = Website_steps.objects.get(pk=12)
@@ -176,7 +176,7 @@ def Project1(request):
     content6 = FFF.website_cont.all().order_by('pk')
     content7 = GGG.website_cont.all().order_by('pk')
     content8 = HHH.website_cont.all().order_by('pk')
-    content9 = III.website_cont.all().order_by('pk')
+    content99 = III1.website_cont.all().order_by('pk')
     content10 = JJJ.website_cont.all().order_by('pk')
     content11 = KKK.website_cont.all().order_by('pk')
     content12 = LLL.website_cont.all().order_by('pk')
@@ -194,7 +194,7 @@ def Project1(request):
                                        'content6': content6,
                                        'content7': content7,
                                        'content8': content8,
-                                       # 'content9': content9,
+                                       'content99': content99,
                                        # 'content10': content10,
                                        # 'content11': content11,
                                        # 'content12': content12,
