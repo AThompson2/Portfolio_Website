@@ -103,6 +103,12 @@ span{
 /* Start media breakpoint section */
 /* ////////////////////////////////////////////////////////////////////////// */
 
+@media (max-width: 767px) {
+  .link_one{
+    visibility: visible;
+  }
+}
+
 @media (max-width: 430px) {
   #nav1{
     background-color: #1f1f24;
