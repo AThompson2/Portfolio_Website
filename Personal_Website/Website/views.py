@@ -51,7 +51,7 @@ def successView(request):
     return HttpResponse('Thank you for your message, I will be in contact with you shortly.')
 
 def Project1(request):
-    step = Website_steps.objects.all().order_by('pk')
+    step1 = Website_steps.objects.all().order_by('pk')
     A = Website_content.objects.get(pk=1)
     B = Website_content.objects.get(pk=2)
     C = Website_content.objects.get(pk=3)
@@ -185,7 +185,7 @@ def Project1(request):
 
 
     return render(request, 'Website/Project1.html', {
-                                       'step': step,
+                                       'step1': step1,
                                        'content1': content1,
                                        'content2': content2,
                                        'content3': content3,

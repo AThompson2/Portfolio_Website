@@ -82,15 +82,15 @@
 
 <div id="section2" class="container">
   <div class="row d-flex">
-    {% for step in step %}
+    {% for step1 in step1 %}
     <div id="card_section" class="col-lg-4 col-md-6 col-sm-12 col-">
       <div class="card-deck h-95">
         <div id="card-style" class="TimeTwo card">
           <img src="{{ step.card_image.url }}" class="card-img-top " alt="...">
           <div class="card-body">
-            <h5 id="sub_headding1" class="card-title card3">{{ step.headding_step }}</h5>
-            <p id="paragraph__font1" class="card-text card3">{{ step.short_description }}</p>
-            {% if step == AA %}
+            <h5 id="sub_headding1" class="card-title card3">{{ step1.headding_step }}</h5>
+            <p id="paragraph__font1" class="card-text card3">{{ step1.short_description }}</p>
+            {% if step1 == AA %}
             <button id="button-style" type="button" class="opacity btn btn-primary" data-toggle="modal" data-target="#one"> <span id="button_content"> More Information </span> </button>
             <div class="modal fade" id="one" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
               <div id="modal-xl" class="modal-dialog  modal-xl" role="document">
@@ -106,7 +106,7 @@
                 </div>
               </div>
             </div>
-            {% elif step == DD %}
+            {% elif step1 == DD %}
             <button id="button-style" type="button" class="opacity btn btn-primary" data-toggle="modal" data-target="#two"><span id="button_content"> More Information </span></button>
             <div class="modal fade" id="two" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
               <div id="modal-xl" class="modal-dialog modal-xl" role="document">
@@ -122,7 +122,7 @@
                 </div>
               </div>
             </div>
-            {% elif step == GG %}
+            {% elif step1 == GG %}
             <button id="button-style" type="button" class="opacity btn btn-primary" data-toggle="modal" data-target="#three"><span id="button_content"> More Information </span></button>
             <div class="modal fade" id="three" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
               <div id="modal-xl" class="modal-dialog modal-xl" role="document">
@@ -138,7 +138,7 @@
                 </div>
               </div>
             </div>
-            {% elif step == JJ %}
+            {% elif step1 == JJ %}
             <button id="button-style" type="button" class="opacity btn btn-primary" data-toggle="modal" data-target="#four"><span id="button_content"> More Information </span></button>
             <div class="modal fade" id="four" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
               <div id="modal-xl" class="modal-dialog modal-xl" role="document">
@@ -154,7 +154,7 @@
                 </div>
               </div>
             </div>
-            {% elif step == OO %}
+            {% elif step1 == OO %}
             <button id="button-style" type="button" class="opacity btn btn-primary" data-toggle="modal" data-target="#five"><span id="button_content"> More Information </span></button>
             <div class="modal fade" id="five" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
               <div id="modal-xl" class="modal-dialog modal-xl" role="document">
@@ -170,7 +170,7 @@
                 </div>
               </div>
             </div>
-            {% elif step == SS %}
+            {% elif step1 == SS %}
             <button id="button-style" type="button" class="opacity btn btn-primary" data-toggle="modal" data-target="#six"><span id="button_content"> More Information </span></button>
             <div class="modal fade" id="six" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
               <div id="modal-xl" class="modal-dialog modal-xl" role="document">
@@ -186,7 +186,7 @@
                 </div>
               </div>
             </div>
-            {% elif step == JJ1 %}
+            {% elif step1 == JJ1 %}
             <button id="button-style" type="button" class="opacity btn btn-primary" data-toggle="modal" data-target="#seven"><span id="button_content"> More Information </span></button>
             <div class="modal fade" id="seven" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
               <div id="modal-xl" class="modal-dialog modal-xl" role="document">
@@ -202,7 +202,7 @@
                 </div>
               </div>
             </div>
-            {% elif step == RR1 %}
+            {% elif step1 == RR1 %}
             <button id="button-style" type="button" class="opacity btn btn-primary" data-toggle="modal" data-target="#eight"><span id="button_content"> More Information </span></button>
             <div class="modal fade" id="eight" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
               <div id="modal-xl" class="modal-dialog modal-xl" role="document">
@@ -218,7 +218,7 @@
                 </div>
               </div>
             </div>
-            {% elif step == VV1 %}
+            {% elif step1 == VV1 %}
             <button id="button-style" type="button" class="opacity btn btn-primary" data-toggle="modal" data-target="#nine"><span id="button_content"> More Information </span></button>
             <div class="modal fade" id="nine" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
               <div id="modal-xl" class="modal-dialog modal-xl" role="document">
@@ -234,7 +234,7 @@
                 </div>
               </div>
             </div>
-            {% elif step == CC2 %}
+            {% elif step1 == CC2 %}
             <button id="button-style" type="button" class="opacity btn btn-primary" data-toggle="modal" data-target="#ten"><span id="button_content"> More Information </span></button>
             <div class="modal fade" id="ten" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
               <div id="modal-xl" class="modal-dialog modal-xl" role="document">
@@ -250,7 +250,7 @@
                 </div>
               </div>
             </div>
-            {% elif step == GG2 %}
+            {% elif step1 == GG2 %}
             <button id="button-style" type="button" class="opacity btn btn-primary" data-toggle="modal" data-target="#eleven"><span id="button_content"> More Information </span></button>
             <div class="modal fade" id="eleven" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
               <div id="modal-xl" class="modal-dialog modal-xl" role="document">
@@ -266,7 +266,7 @@
                 </div>
               </div>
             </div>
-            {% elif step == TT2 %}
+            {% elif step1 == TT2 %}
             <button id="button-style" type="button" class="opacity btn btn-primary" data-toggle="modal" data-target="#twelve"><span id="button_content"> More Information </span></button>
             <div class="modal fade" id="twelve" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
               <div id="modal-xl" class="modal-dialog modal-xl" role="document">
