@@ -3,6 +3,10 @@
 /* Start navbar section */
 /* ////////////////////////////////////////////////////////////////////////// */
 
+html, body {
+    min-height: 100%;
+}
+
 #nav1{
   border-style: solid;
   border-bottom-width: 1px;
