@@ -39,7 +39,7 @@
 .thankyou_section{
   background-color: #ffffff;
   padding-top: 150px;
-  padding-bottom: 110px;;
+  padding-bottom: 450px;
   border-top-style: solid;
   border-bottom-style: solid;
   border-width: thin;
@@ -87,13 +87,13 @@
     font-size: 25px;
   }
   .thankyou_section{
-    padding-bottom:140px;
+    padding-bottom:500px;
   }
 }
 
 @media (max-width:767px) {
   .thankyou_section{
-    padding-bottom: 121%;
+    padding-bottom: 500px;
   }
 }
 
@@ -108,7 +108,7 @@
     font-size: 15px;
   }
   .thankyou_section{
-    padding-bottom: 110%;
+    padding-bottom: 550px;
   }
 }
 
