@@ -94,6 +94,8 @@ span{
 
 .footer{
   background-color: #1f1f24;
+  position: relative;
+  min-height: 100vh;
 }
 
 /* ////////////////////////////////////////////////////////////////////////// */
