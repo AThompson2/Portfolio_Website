@@ -93,7 +93,7 @@
 
 @media (max-width:767px) {
   .thankyou_section{
-    padding-bottom: 150px;
+    padding-bottom: 121%;
   }
 }
 
@@ -108,7 +108,7 @@
     font-size: 15px;
   }
   .thankyou_section{
-    padding-bottom: 176px;
+    padding-bottom: 110%;
   }
 }
 

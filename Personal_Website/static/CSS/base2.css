@@ -67,6 +67,11 @@ span{
 /* Start footer section */
 /* ////////////////////////////////////////////////////////////////////////// */
 
+#footer1{
+  position: absolute;
+  bottom: 0;
+}
+
 #footer_items{
   color: #ffffff;
   font-family: 'Architects Daughter', cursive;
