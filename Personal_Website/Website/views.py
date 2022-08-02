@@ -186,7 +186,7 @@ def Project1(request):
 
     return render(request, 'Website/Project1.html', {
                                        'step1': step1,
-                                       # 'content1': content1,
+                                       'content1': content1,
                                        # 'content2': content2,
                                        # 'content3': content3,
                                        # 'content4': content4,
@@ -198,7 +198,7 @@ def Project1(request):
                                        # 'content10': content10,
                                        # 'content11': content11,
                                        # 'content12': content12,
-                                       # 'AA': AA,
+                                       'AA': AA,
                                        # 'DD': DD,
                                        # 'GG': GG,
                                        # 'JJ': JJ,
