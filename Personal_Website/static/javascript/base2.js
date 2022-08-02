@@ -6,7 +6,7 @@ observer3 = new IntersectionObserver(entries => {
     if(entry.isIntersecting){
 
       const myTimeout = setTimeout(timeDelay1, i);
-      const mediaQuery = windo.matchMedia('(min-width: 767px)')
+      const mediaQuery = window.matchMedia('(min-width: 767px)')
       function timeDelay1() {
           if(mediaQuery.matches) {
             entry.target.classList.remove('slideUp');
