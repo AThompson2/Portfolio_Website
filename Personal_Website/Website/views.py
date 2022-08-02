@@ -11,16 +11,15 @@ from django.core.mail import send_mail, BadHeaderError
 from sendgrid import SendGridAPIClient
 from sendgrid.helpers.mail import Mail
 
-# Create your views here.
+# //////////////////////////////////////////////////////////////////////////////
+# Standard template views
+# //////////////////////////////////////////////////////////////////////////////
 
 class HomePage(TemplateView):
     template_name = 'Website/HomePage.html'
 
 class AboutMe(TemplateView):
     template_name = 'Website/About_me.html'
-
-# class ContactMe(TemplateView):
-#     template_name = 'Website/ContactMe.html'
 
 class TestPage(TemplateView):
     template_name = 'Website/TestPage.html'
@@ -31,6 +30,9 @@ class Test_js(TemplateView):
 class Portfolio_main(TemplateView):
     template_name = 'Website/Portfolio_main.html'
 
+# //////////////////////////////////////////////////////////////////////////////
+# Function Based views
+# //////////////////////////////////////////////////////////////////////////////
 
 def ContactMe(request):
     if request.method == 'POST':
@@ -49,6 +51,12 @@ def ContactMe(request):
 
 def successView(request):
     return HttpResponse('Thank you for your message, I will be in contact with you shortly.')
+
+# //////////////////////////////////////////////////////////////////////////////
+# This is the view for project 1 and project 2 in the portfolio section. It
+# grabs the item from the DB by the primary key and then grabs the set that
+ # that pk is related to via the many to many field in the # DB.
+# //////////////////////////////////////////////////////////////////////////////
 
 def Project1(request):
     step1 = Website_steps.objects.all().order_by('pk')
