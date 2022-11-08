@@ -76,7 +76,7 @@
 
 #image_settings{
   text-align: center;
-  /* padding-top: 50px; */
+  padding-top: 20px;
   width: 100%;
 }
 
@@ -224,6 +224,7 @@
   }
   #image_settings{
     width: 100%;
+    padding-top: 0%;
   }
   .top{
     padding-bottom: 0px;
