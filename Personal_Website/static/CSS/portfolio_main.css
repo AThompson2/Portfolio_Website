@@ -76,9 +76,8 @@
 
 #image_settings{
   text-align: center;
-  padding-top: 50px;
-  width: 25%;
-  height: 25;
+  /* padding-top: 50px; */
+  width: 100%;
 }
 
 /* ////////////////////////////////////////////////////////////////////////// */
