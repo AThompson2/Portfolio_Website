@@ -461,6 +461,12 @@
     }
 }
 
+@@media (max-width: 1304px) {
+  #image_1{
+    padding-top: 15%;
+  }
+}
+
 @media (max-width: 991px) {
   .col1{
     padding-bottom: 0px;
