@@ -472,11 +472,17 @@
   #image_1{
     padding-top: 0%;
   }
+  .section1{
+    padding-left: 45%;
+  }
 }
 
 @media (max-width: 528px) {
   #tech_img{
     display: none;
+  }
+  .section1{
+    padding-left: 40%;
   }
 }
 
