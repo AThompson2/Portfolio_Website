@@ -79,6 +79,7 @@
 
 .section1{
   list-style-type: disc;
+  list-style-position: inside;
   font-size: 30px;
   color: #000000;
 }
