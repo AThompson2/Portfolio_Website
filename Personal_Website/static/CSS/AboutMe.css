@@ -461,7 +461,7 @@
     }
 }
 
-@@media (max-width: 1304px) {
+@media (max-width: 1304px) {
   #image_1{
     padding-top: 15%;
   }
