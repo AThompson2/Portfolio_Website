@@ -40,8 +40,8 @@ def ContactMe(request):
             form = ContactForm(request.POST)
             if form.is_valid():
                 form.save()
-                email_subject = f'New contact {form.cleaned_data["email"]}:'
-                email_message = f'This is an message from {form.cleaned_data["subject"]} : {form.cleaned_data['message']}'
+                email_subject = f'New contact {form.cleaned_data["email"]} : {form.cleaned_data["subject"]}'
+                email_message = form.cleaned_data['message']
                 send_mail(email_subject, email_message, settings.CONTACT_EMAIL, settings.ADMIN_EMAIL)
                 return render(request, 'Website/success.html')
     form = ContactForm()
